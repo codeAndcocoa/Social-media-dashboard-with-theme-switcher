@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Bootstrap Css V.5.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Css File -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- Javascript File -->
+     <script src="script.js" defer></script>
+    <title>Frontend Mentor |Social media dashboard with theme switcher</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 18px;
+        text-align: center;
+        color: rgb(189, 146, 229);
+        margin-top: 3rem;
+      }
+      .attribution a {
+        color: hsl(25, 86%, 45%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="mode-toggle d-flex justify-content-between align-items-lg-start flex-column flex-lg-row w-100"
+    >
+      <div class="title p-4">
+        <h1>Social Media Dashboard</h1>
+        <h6>Total Followers: 23,004</h6>
+      </div>
+      <div class="toggle p-4">
+        <div
+          class="d-flex align-items-center justify-content-between justify-content-lg-end"
+        >
+          <label for="modeSwitch" class="form-check-label me-0 me-lg-2"
+            >Dark Mode</label
+          >
+          <div
+            class="form-check form-switch position-relative border-0 shadow-none"
+          >
+            <input
+              type="checkbox"
+              class="form-check-input border-0 shadow-none"
+              role="switch"
+              id="modeSwitch"
+            />
+            <span class="round position-absolute"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="total-number">
+      <div
+        class="total-cards d-flex flex-column flex-lg-row justify-content-between m-auto"
+      >
+        <div class="card-cell flex-fill">
+          <div class="facebook-card rounded-3 total">
+            <div
+              class="d-flex flex-column justify-content-center w-100 text-center mt-3"
+            >
+              <div class="username p-3">
+                <span
+                  ><img
+                    src="./images/icon-facebook.svg"
+                    alt="facebook logo icon"
+                    class="me-2"
+                  />@nathanf</span
+                >
+              </div>
+              <div class="number">
+                <h2>1987</h2>
+                <span class="d-block text-uppercase">Followers</span>
+              </div>
+              <div class="rate mt-4">
+                <span
+                  ><img
+                    src="./images/icon-up.svg"
+                    alt="image of up arrow head"
+                    class="me-1"
+                  />
+                  12 Today</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-cell flex-fill">
+          <div class="twitter-card rounded-3 total">
+            <div
+              class="d-flex flex-column justify-content-center w-100 text-center mt-3"
+            >
+              <div class="username p-3">
+                <span
+                  ><img
+                    src="./images/icon-twitter.svg"
+                    alt="twitter logo icon"
+                    class="me-2"
+                  />@nathanf</span
+                >
+              </div>
+              <div class="number">
+                <h2>1044</h2>
+                <span class="d-block text-uppercase">Followers</span>
+              </div>
+              <div class="rate mt-4">
+                <span
+                  ><img
+                    src="./images/icon-up.svg"
+                    alt="image of up arrow head"
+                    class="me-1"
+                  />99 Today</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-cell flex-fill">
+          <div class="instagram-card rounded-3 total">
+            <div
+              class="d-flex flex-column justify-content-center w-100 text-center mt-3"
+            >
+              <div class="username p-3">
+                <span
+                  ><img
+                    src="./images/icon-instagram.svg"
+                    alt="instagram logo icon"
+                    class="me-2"
+                  />@realnathanf</span
+                >
+              </div>
+              <div class="number">
+                <h2>11k</h2>
+                <span class="d-block text-uppercase">Followers</span>
+              </div>
+              <div class="rate mt-4">
+                <span
+                  ><img
+                    src="./images/icon-up.svg"
+                    alt="image of up arrow head"
+                    class="me-1"
+                  />1099 Today</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-cell flex-fill">
+          <div class="youtube-card rounded-3 total">
+            <div
+              class="d-flex flex-column justify-content-center w-100 text-center mt-3"
+            >
+              <div class="username p-3">
+                <span
+                  ><img
+                    src="./images/icon-youtube.svg"
+                    alt="youtube logo icon"
+                    class="me-2"
+                  />
+                  Nathan F.</span
+                >
+              </div>
+              <div class="number">
+                <h2>8239</h2>
+                <span class="d-block text-uppercase">Subscribers</span>
+              </div>
+              <div class="rate mt-4">
+                <span
+                  ><img
+                    src="./images/icon-down.svg"
+                    alt="image of down arrow head"
+                    class="me-1"
+                  />144 Today</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="today-overview">
+      <h2>Overview - Today</h2>
+      <div class="grid overview-grid m-auto mt-4">
+        <div class="row w-100  m-auto">
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell facebook-views rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Page Views</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-facebook.svg" alt="facebook logo icon" />
+                </div>
+                <div class="col-6  p-2">87</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-up.svg" alt="arrow head up" class="me-1" />3%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell facebook-likes rounded">
+              <div class="row w-100 m-auto ">
+                <div class="col-6  p-2">Likes</div>
+                <div class="col-6 p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-facebook.svg" alt="facebook logo icon" />
+                </div>
+                <div class="col-6 p-2">52</div>
+                <div class="col-6 p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-down.svg" alt="arrow head down" class="me-1" />2%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell instagram-likes rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Likes</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-instagram.svg" alt="instagram logo icon" />
+                </div>
+                <div class="col-6  p-2">5462</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-up.svg" alt="arrow head up" class="me-1" />2257%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell instagram-views rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Profile Views</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-instagram.svg" alt="instagram logo icon" />
+                </div>
+                <div class="col-6  p-2">52k</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-up.svg" alt="arrow head up" class="me-1" />1375%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row w-100 m-auto">
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell twitter-retweets rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Retweets</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-twitter.svg" alt="twitter logo icon" />
+                </div>
+                <div class="col-6  p-2">117</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-up.svg" alt="arrow head up" class="me-1" />303%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell twitter-likes rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Likes</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-twitter.svg" alt="twitter logo icon" />
+                </div>
+                <div class="col-6  p-2">507</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-up.svg" alt="arrow head up" class="me-1" />553%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell youtube-likes rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Likes</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-youtube.svg" alt="youtube logo icon" />
+                </div>
+                <div class="col-6  p-2">107</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-down.svg" alt="arrow head down" class="me-1" />19%</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="overview-cell youtube-views rounded">
+              <div class="row w-100 m-auto">
+                <div class="col-6  p-2">Total Views</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">
+                  <img src="./images/icon-youtube.svg" alt="youtube logo icon" />
+                </div>
+                <div class="col-6  p-2">1407</div>
+                <div class="col-6  p-2 text-end pe-3 pt-3">              
+                  <span><img src="./images/icon-down.svg" alt="arrow head down" class="me-1" />12%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Naglaa Raslan</a>.
+    </div>
+
+    <!-- Bootstrap Javascript V.5.3 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
