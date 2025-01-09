@@ -237,10 +237,10 @@ section {
 }
 @media screen and (width <= 1024px) {
   .total-cards, .overview-grid {
-    max-width: 80%;
+    max-width: 86%;
   }
   .overview-cell, .total {
-    max-width: 38rem;
+    max-width: 43rem;
   }
 }
 @media screen and (width <= 768px) {
@@ -260,7 +260,13 @@ section {
   }
 }
 @media screen and (width >= 1920px) {
-  .total-cards, .overview-grid {
-    max-width: 70%;
+  .mode-toggle {
+    padding: 0 3.3rem;
+  }
+  .overview-cell, .total {
+    max-width: 20rem;
+  }
+  section {
+    width: 95%;
   }
 }/*# sourceMappingURL=style.css.map */
